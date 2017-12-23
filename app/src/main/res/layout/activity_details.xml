@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/holo_green_light"
+    android:foregroundGravity="center"
+    app:layout_anchorGravity="center"
+    tools:context="com.example.gabis.display.MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="587dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="User Name: "
+                        android:textColor="@android:color/black"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <TextView
+                        android:id="@+id/userNamesStatic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="My User Name"
+                        tools:layout_editor_absoluteX="95dp"
+                        tools:layout_editor_absoluteY="49dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/firstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="First Name: "
+                        android:textColor="@android:color/black"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="75dp" />
+
+                    <TextView
+                        android:id="@+id/firstNameStatic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="My First Name"
+                        tools:layout_editor_absoluteX="95dp"
+                        tools:layout_editor_absoluteY="75dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Last Name: "
+                        android:textColor="@android:color/black"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="103dp" />
+
+                    <TextView
+                        android:id="@+id/lastNameStatic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="My Last Name"
+                        tools:layout_editor_absoluteX="95dp"
+                        tools:layout_editor_absoluteY="103dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Address: "
+                        android:textColor="@android:color/black"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="129dp" />
+
+                    <TextView
+                        android:id="@+id/addessStatic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="My Address"
+                        tools:layout_editor_absoluteX="95dp"
+                        tools:layout_editor_absoluteY="129dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <TextView
+                        android:id="@+id/city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="City: "
+                        android:textColor="@android:color/black"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="155dp" />
+
+                    <TextView
+                        android:id="@+id/cityStatic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="My City"
+                        tools:layout_editor_absoluteX="95dp"
+                        tools:layout_editor_absoluteY="155dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Email: "
+                        android:textColor="@android:color/black"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="180dp" />
+
+                    <TextView
+                        android:id="@+id/emailStatic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="My Email"
+                        tools:layout_editor_absoluteX="95dp"
+                        tools:layout_editor_absoluteY="180dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_camera"
+                tools:layout_editor_absoluteX="242dp"
+                tools:layout_editor_absoluteY="35dp" />
+
+        </LinearLayout>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
