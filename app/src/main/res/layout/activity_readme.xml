@@ -4,6 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
     tools:context="ddgm.store.ReadmeActivity">
 
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_cart"
+            android:drawableRight="@drawable/ic_basket"
+            android:gravity="center"
+            android:text="About The App"
+            android:textAlignment="center"
+            android:textColor="?android:attr/colorMultiSelectHighlight"
+            android:textColorHighlight="@android:color/background_dark"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/readme_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/readme"
+            android:textSize="24sp" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,2 @@
+This application was developed in order to allow stores to provide consumers with the ability to view products and receive details about them and order them online without going to the store itself.
+The application allows you to place an order as a registered user [for payment] and as an external user.
