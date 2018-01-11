@@ -17,4 +17,5 @@
 The application allows you to place an order as a registered user [for payment] and as an external user. \n \n ENJOY!</string>
     <string name="title_activity_map_acrivity">MapAcrivity</string>
     <string name="title_activity_maps">Map</string>
+    <string name="auth_failed">Authentication Faild</string>
 </resources>

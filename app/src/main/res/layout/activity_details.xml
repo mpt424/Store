@@ -39,7 +39,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="User Name: "
+                        android:text="Hello, "
                         android:textColor="@android:color/black"
                         tools:layout_editor_absoluteX="16dp"
                         tools:layout_editor_absoluteY="49dp" />
@@ -52,6 +52,14 @@
                         android:text="My User Name"
                         tools:layout_editor_absoluteX="95dp"
                         tools:layout_editor_absoluteY="49dp" />
+
+                    <TextView
+                        android:id="@+id/user_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="[regular user]"
+                        android:textStyle="italic" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -185,23 +193,16 @@
 
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="160dp"
-                android:layout_height="160dp"
-                android:layout_weight="1"
-                app:srcCompat="@android:drawable/ic_menu_camera"
-                tools:layout_editor_absoluteX="242dp"
-                tools:layout_editor_absoluteY="35dp" />
-
         </LinearLayout>
 
-        <com.google.android.gms.maps.MapView
-            android:id="@+id/mapView"
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="0dp" />
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            tools:layout_editor_absoluteX="242dp"
+            tools:layout_editor_absoluteY="35dp" />
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
