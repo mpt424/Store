@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    android:fadeScrollbars="true"
+    android:isScrollContainer="true"
+    android:nestedScrollingEnabled="true"
+    tools:context="ddgm.store.AddProAcrivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="44dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_cart"
+            android:drawableRight="@drawable/ic_basket"
+            android:gravity="center"
+            android:text="ADD PRODUCT"
+            android:textAlignment="center"
+            android:textColor="?android:attr/colorMultiSelectHighlight"
+            android:textColorHighlight="@android:color/background_dark"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/dep_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:gravity="center"
+                android:hint="Department Name"
+                android:textAlignment="center" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/namep_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Product Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/supl_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:gravity="center"
+                android:hint="SupplierID"
+                android:inputType="number"
+                android:textAlignment="center" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/stock_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:gravity="center"
+                android:hint="Unit In Stock"
+                android:inputType="number"
+                android:textAlignment="center" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/order_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:gravity="center"
+                android:hint="Unit On Order"
+                android:inputType="number"
+                android:textAlignment="center" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/price_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:gravity="center"
+                android:hint="Unit Price"
+                android:inputType="number"
+                android:textAlignment="center" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/addPro_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="addTheProduct"
+            android:text="ADD" />
+
+    </LinearLayout>
+</ScrollView>

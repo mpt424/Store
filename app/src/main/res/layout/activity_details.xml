@@ -14,8 +14,8 @@
         android:layout_width="368dp"
         android:layout_height="587dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -202,6 +202,28 @@
             app:srcCompat="@android:drawable/ic_menu_camera"
             tools:layout_editor_absoluteX="242dp"
             tools:layout_editor_absoluteY="35dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_bn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="openAddProActivity"
+                android:text="Add Product"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/cart_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="openCartActivity"
+                android:text="Search Product" />
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -151,6 +151,8 @@ private String TAG = "REGISTER";
                             Toast.makeText(getBaseContext(),"register success",Toast.LENGTH_SHORT).show();
 
                             mDatabase.child("users").child(userA.getUid()).setValue(usr);
+
+                            /*upload user photo*/
                             try {
                                 if (photo != null)
                                     uploadPhoto();

@@ -1,21 +1,21 @@
 package ddgm.store;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.StorageReference;
@@ -34,6 +34,17 @@ public class DetailsActivity extends BaseActivity {
     TextView isMan;
     TextView email;
     ImageView pic;
+
+    public void openCartActivity(View view){
+        Intent intent1 = new Intent(DetailsActivity.this,SearchActivity.class);
+        startActivity(intent1);
+    }
+
+    //only for managers
+    public void openAddProActivity(View view){
+        Intent intent1 = new Intent(DetailsActivity.this,AddProAcrivity.class);
+        startActivity(intent1);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +80,8 @@ public class DetailsActivity extends BaseActivity {
                     if(manage){
                         isMan.setText("[Manager]");
                         isMan.setTextColor(getResources().getColor(android.R.color.holo_red_light));
+                        Button add = (Button)findViewById(R.id.add_bn);
+                        add.setVisibility(View.VISIBLE);
                     }
                 }
 
